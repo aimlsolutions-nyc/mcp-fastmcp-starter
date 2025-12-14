@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/mcp_fastmcp_starter/__init__.py
+src/mcp_fastmcp_starter/server.py
+src/mcp_fastmcp_starter.egg-info/PKG-INFO
+src/mcp_fastmcp_starter.egg-info/SOURCES.txt
+src/mcp_fastmcp_starter.egg-info/dependency_links.txt
+src/mcp_fastmcp_starter.egg-info/requires.txt
+src/mcp_fastmcp_starter.egg-info/top_level.txt
