@@ -12,8 +12,8 @@ Clean lifecycle and error handling
 
 Testable and CI-verified
 
-**The server exposes three core HTTP surfaces:
-**Client / Agent Runtime
+**The server exposes three core HTTP surfaces:**
+Client / Agent Runtime
         |
         |  GET  /tools        → discover available tools + schemas
         |  POST /invoke       → invoke tool with typed JSON args
@@ -27,36 +27,36 @@ Tool execution
         |
 Structured JSON result or error
 
-**Tools are defined with:
-**A stable name
+**Tools are defined with:**
+A stable name
 A human-readable description
 A machine-readable input schema
 A strictly typed output shape
 
 
-**Example tools included:
-**sayHello – returns a greeting with a timestamp
+**Example tools included:**
+sayHello – returns a greeting with a timestamp
 reverse – reverses input text and returns metadata
 
 
-**Run locally
-**Create and activate a virtual environment:
+**Run locally**
+Create and activate a virtual environment:
 python -m venv .venv
 source .venv/bin/activate
 pip install -U pip
 pip install -e ".[dev]"
 
-**Start the server:
-**./scripts/run_local.sh
+**Start the server:**
+./scripts/run_local.sh
 
-**Health check:
-**curl http://127.0.0.1:8000/healthz
+**Health check:**
+curl http://127.0.0.1:8000/healthz
 
-**List available tools (schemas included):
-**curl http://127.0.0.1:8000/tools | python -m json.tool
+**List available tools (schemas included):**
+curl http://127.0.0.1:8000/tools | python -m json.tool
 
-**Invoke a tool:
-**curl http://127.0.0.1:8000/invoke \
+**Invoke a tool:**
+curl http://127.0.0.1:8000/invoke \
   -H 'content-type: application/json' \
   -d '{
     "tool": "sayHello",
@@ -64,22 +64,18 @@ pip install -e ".[dev]"
     "trace_id": "demo-1"
   }' | python -m json.tool
 
-**Testing
-**python -m pytest -q
+**Testing**
+python -m pytest -q
 
-**The test suite verifies:
-**Tool discovery
+**The test suite verifies:**
+Tool discovery
 Input validation
 Successful invocation
 Error behavior for unknown tools
 
-**This repository includes a GitHub Actions workflow that runs on every push and pull request:
-**Dependency install
+**This repository includes a GitHub Actions workflow that runs on every push and pull request:**
+Dependency install
 Linting with Ruff
 Full test suite via pytest
-
-
-
-
 
 
