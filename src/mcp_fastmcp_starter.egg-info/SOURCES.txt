@@ -7,3 +7,4 @@ src/mcp_fastmcp_starter.egg-info/SOURCES.txt
 src/mcp_fastmcp_starter.egg-info/dependency_links.txt
 src/mcp_fastmcp_starter.egg-info/requires.txt
 src/mcp_fastmcp_starter.egg-info/top_level.txt
+tests/test_server.py
