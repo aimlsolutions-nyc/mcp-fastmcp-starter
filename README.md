@@ -1,16 +1,11 @@
 A minimal, production-minded MCP-shaped tool server scaffold for building agentic AI services with typed tool contracts, explicit invocation semantics, and deterministic JSON I/O, served via FastAPI. This project provides a runnable starter for exposing tools to agent runtimes in an MCP-style pattern:
 
-Explicit tool registry
-
-Machine-readable input schemas
-
-Typed request/response contracts
-
-Deterministic invocation surface
-
-Clean lifecycle and error handling
-
-Testable and CI-verified
+**Explicit tool registry**  
+**Machine-readable input schemas**  
+**Typed request/response contracts**  
+**Deterministic invocation surface**  
+**Clean lifecycle and error handling**  
+**Testable and CI-verified**  
 
 **The server exposes three core HTTP surfaces:**
 Client / Agent Runtime
